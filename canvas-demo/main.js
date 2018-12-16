@@ -1,49 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-  <style>
-        #xxx{
-        background: green;
-        display: block;
-        }
-        html,body{
-        margin: 0;
-        position: relative;
-        }
-
-        .actions{
-        position: fixed;
-        bottom: 0;
-        left:0;
-        }
-
-        .actions > #brush{
-        display: none;
-        }
-
-        .actions.x #brush{
-        display: inline-block;
-        }
-
-        .actions.x #eraser{
-        display: none;
-        }
-  </style>
-</head>
-<body>
-<canvas id="xxx" width=300 height=300>
-  
-  </canvas>
-  <div id="actions" class="actions">
-    <button id="eraser">橡皮擦</button>
-    <button id="brush">画笔</button>  
-  </div>
-
-</body>
-<script>
 var canvas = document.getElementById('xxx')
 var context = canvas.getContext('2d')
 autoSetCanvas(canvas)
@@ -124,6 +78,3 @@ function listenToMouse(canvas){
   }
 
 }
-
-</script>
-</html>
