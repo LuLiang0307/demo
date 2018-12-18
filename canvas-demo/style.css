@@ -61,3 +61,24 @@ html,body{
     transform: scale(1.2);
     transition: all 0.3s;
 }
+.sizes{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+}
+.sizes li{
+    margin: 20px;
+}
+.sizes .thin{
+    height: 0;
+    width: 20px;
+    border-top: 5px solid black;
+}
+.sizes .thick{
+    height: 0;
+    width: 20px;
+    border-top: 10px solid black;
+}
+.sizes.active{
+    fill: red;
+}
